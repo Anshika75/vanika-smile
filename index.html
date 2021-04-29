@@ -1,0 +1,293 @@
+<!-----PLEASE PLEASE PLEASE------>
+<!-------READ THESE LINES------>
+
+<!-----I am very new to coding---->
+
+<!------This is very simple because its my Twenty first  code ever and its purely my tenth try with css.--->
+<!-----No. of days i commited to this code = 1----->
+<!----the reason i created it just to get feedback for improving my skills ---->
+<!----Its the second time i tried to create simple ui..so don't know much about it    :( --->
+<!--VANIKA CREATIONS✨ 🎵🎶 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+       <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'> 
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </head>
+    <body>    
+    <style>
+        body{
+background-size:100vw 100vh;
+background-size:cover; padding:1em;
+ -webkit-background-clip:text ;    background-image:url("https://i.gifer.com/IrF.gif"); 
+ overflow-x:hidden;
+ }
+
+ .content {
+  top:30vmin;
+  text-align:center;
+  border-radius:10px;
+  background:rgba(0,0,0,0.9);
+  box-shadow:0 0px 10px  #6fd6ff, 0 0px 20px #6fd6ff, 0 0 30px  #6fd6ff;
+  font-family: Aclonica;
+  text-align:center;
+    -webkit-text-fill-color: rgba(0,200,200,0.1);
+     font-size:20vmin;
+ 
+    animation: content 2s both;
+ font-family: 'Satisfy', cursive;
+    font-size:24pt;
+    background:-webkit-linear-gradient(#ee9ae5, #5961f9);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+
+}
+
+@keyframes content {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+.quote1, .quote2, .quote3, .quote4{
+ text-align:center;
+  border-radius:10px;
+  background:rgba(0,0,0,0.5);
+  box-shadow:0 0px 10px  #9a2ca0, 0 0px 20px #9a2ca0, 0 0 30px #9a2ca0;
+  font-family: Georgia, serif;
+font-size: 16px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #ffffff;
+font-weight: 700;
+text-decoration: none;
+font-style: italic;
+font-variant: normal;
+text-transform: capitalize;
+    
+  }
+
+@keyframes quote1 {
+  0% {
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+  
+  .img1{
+    top:90vmin; 
+    left:30vmin;
+    animation: quote1 1.5s ease-out 0.5s 1;
+    height:50vmin;
+    width:50vmin;
+    border-radius:50%;
+    overflow:hidden;
+    margin:auto;
+    background:#000;
+       animation: quote1 1.5s ease-out 2s 1, roll-out-right 100s ease-in 5s 1;
+    position:absolute;
+    background:rgba(0,0,0,0.5);
+    box-shadow:0 0px 10px  #9a2ca0, 0 0px 20px #9a2ca0, 0 0 30px #9a2ca0;
+ 
+
+    
+}
+
+@keyframes roll-out-right {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  2%,100%{
+    transform: translateX(1000px) rotate(540deg);
+    opacity: 0;
+  }
+  
+}
+
+
+
+.quote1{
+    animation: quote1 1.5s ease-out 2s 1, roll-out-right 100s ease-in 5s 1;
+
+}
+
+
+
+.quote2{
+    animation: quote1 1.5s ease-out 6s 1, roll-out-right 100s ease-in 15s 1;
+}
+
+.quote2{
+    animation:hid 14s linear 1;
+    transform: translateX(500px) rotate(0deg);
+}
+.quote3{
+    animation:hid2 26s linear 1;
+    transform: translateX(500px) rotate(0deg);
+}
+@keyframes hid{
+    0%{
+        transform: translateX(-500px) rotate(0deg);
+    }
+    40%{
+        transform: translateX(-500px) rotate(0deg);
+    }
+    45%,80%{
+        transform: translateX(-0) rotate(360deg);
+    }
+    100%{
+        transform: translateX(500px) rotate(720deg);
+    }
+}
+@keyframes hid2{
+    0%{
+        transform: translateX(-500px) rotate(0deg);
+    }
+    40%{
+        transform: translateX(-500px) rotate(0deg);
+    }
+    60%,90%{
+        transform: translateX(-0) rotate(360deg);
+    }
+    100%{
+        transform: translateX(500px) rotate(720deg);
+    }
+}
+
+.quote2{
+    margin-top:-80vmin;
+}
+.quote4{
+    margin-top:-130vmin;
+    font-size:15px;
+    animation: fadeout ease 2s forwards;
+   animation-delay:25s;
+   animation-iteration-count:1;
+   opacity:0;
+}
+
+@keyframes fadeout {
+0% {opacity:0;}
+100% {opacity:1;}
+
+}
+
+
+
+
+
+    </style>
+    <audio controls style=" display:none;" loop   id="a"  >
+    <source  src=" https://drive.google.com/uc?id=1LshQ6vIr9L7SycR3s0AMk5WBHp2QNMQb&export=download.mp3"> 
+   <script>
+     Swal.fire('When life gives us lemons dont be sad Throw it back and ask for choclates🍫 Made by Vanshika di and Anshika.\n 》》VANIKA CREATIONS✨ 🎵🎶 《《')
+        </script>  
+      </audio>
+    
+     <div class="content"><b>When all else fails, SMILE</b></div> <br /> 
+     <div class="quote1"><i>Old man has 8 hair on his head,
+He went to barber shop barber is anger mood asked "shall I cut or count?" Old man smiled and said ," colour it!"
+Life is to enjoy with whatever you have with you 🤗
+Keep smiling 😁</i></div><br />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-VrVodKBlhcFUySIc_5cZtXpt-LQDxggz8w&usqp=CAU" class="img1" alt="" >
+
+
+
+
+
+<div class="quote3"><i>Life is Ironic.it takes sadness🙁 to know what happiness😁 is,noise to appericate silence and absence to value presence.so always keep smiling😄</i></div>
+<br />
+<div class="quote2">
+    
+<i>
+If at times⏲ you feel you want to cry🥺
+And life seems such a trial👍,
+Above the clouds🌥 there's a bright blue sky🌤,
+So make your tears😥 a smile😊.
+
+As you travel🚶‍♀️ on life's way🛤
+With its many ups🔼 and downs🔽,
+Remember🤔 it's quite true💯 to say
+One smile😊 is worth= a dozen frowns😣😣.
+
+Among the world's🌐 expensive💰 things,
+A smile😊 is very cheap💲.
+And when you give a smile😊 away,
+You get one back to keep😄.
+
+Happiness😃 comes at times⏳ to all,
+But sadness😔 comes unbidden,
+And sometimes a few tears😥 must fall💧
+Among the laughter😂 hidden.
+
+So when friends👭 have sadness😔 on their face😶
+And troubles😧 round them piled,
+The world🌏 will seem a better place🏕
+And all because you smiled😊.</i>
+    
+</div>
+ 
+ <div class="quote4">
+    A smile😊 costs💲 nothing🙅‍♀️, but gives much.
+It enriches😄 those who receive, without making poorer😶 those who give.😊<br>
+It takes a moment⏳, but the memory of it sometimes lasts forever⌛.
+None is so rich💰 or mighty that he can get along🤝 without🙅‍♀️ it, and none is so poor😔, but that he can be made rich💰 by it.<br>
+
+A smile creates happiness🤠 in the home🏠, fosters good will🤞 in business👔, and is the countersign of friendship👭.<br>
+
+It brings rest😊 to the weary😣, cheer🤠 to the discouraged😞, sunshine🌞 to the sad😔, and it is nature’s best antidote💊 for trouble.😧<br>
+
+Yet it cannot🙅‍♀️ be bought💰, begged, borrowed🤝, or stolen, for it is something that is of no value to anyone, until it is given away🤗.<br>
+
+Some people are too tired🤤 to give you a smile😊;
+
+Give them one of yours😊, as none needs a smile😊 so much as he who has no more to give.<br></div>
+<script>
+    window.addEventListener("mouseover",play);
+window.addEventListener("click",play);
+function play() { document.getElementById("a").play();
+}
+</script>
+</body>
+</html>
